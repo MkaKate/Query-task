@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Checkboxes</h2>
+    <form id="checkboxForm">
+      <label><input type="checkbox" class="checkbox"> Checkbox 1</label><br>
+      <label><input type="checkbox" class="checkbox"> Checkbox 2</label><br>
+      <label><input type="checkbox" class="checkbox"> Checkbox 3</label><br>
+      <label><input type="checkbox" class="checkbox"> Checkbox 4</label><br>
+      <label><input type="checkbox" class="checkbox"> Checkbox 5</label><br>
+      <label><input type="checkbox" class="checkbox"> Checkbox 6</label><br>
+    </form>
+    <script>
+        const $checkboxes = $(':checkbox');
+        $checkboxes.on('click', function(){
+            if($(':checkbpxe:checked').length == 3){
+                $checkboxes.attr('disabled', 'true');
+            }
+        })
+    </script>
+</body>
+</html>
